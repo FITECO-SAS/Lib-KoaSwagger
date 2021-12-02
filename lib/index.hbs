@@ -25,6 +25,19 @@
       margin:0;
       background: #fafafa;
     }
+
+    .information-container .description, .info__tos, .info__contact, .info__license { display: none }
+    .try-out, .renderedMarkdown + input, .execute-wrapper, .response-col_links, .model-example { display: none }
+    .renderedMarkdown p { margin: 0 !important }
+    .col_header.response-col_status { padding-top: 12px !important }
+    .col_header.response-col_description { font-size: 14px !important }
+    .swagger-ui .parameter__name { font-weight: 700; }
+    .response[data-code="200"] .response-col_status { color: #139513; font-weight: 700; }
+    .response:not([data-code="200"]) .response-col_status { color: #cf0000; font-weight: 700; }
+    .swagger-ui .opblock .tab-header .tab-item.active h4 span { surcor: default }
+    .swagger-ui .opblock .tab-header .tab-item.active h4 span:after { content: none }
+    .parameters-col_description em { font-size: 0.9em; color: #666 }
+    code { color: grey !important }
   </style>
 </head>
 
