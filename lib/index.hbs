@@ -32,8 +32,12 @@
     .col_header.response-col_status { padding-top: 12px !important }
     .col_header.response-col_description { font-size: 14px !important }
     .swagger-ui .parameter__name { font-weight: 700; }
-    .response[data-code="200"] .response-col_status { color: #139513; font-weight: 700; }
-    .response:not([data-code="200"]) .response-col_status { color: #cf0000; font-weight: 700; }
+    .response[data-code="200"] .response-col_status,
+    .response[data-code="201"] .response-col_status,
+    .response[data-code="202"] .response-col_status,
+    .response[data-code="204"] .response-col_status,
+    .response[data-code="206"] .response-col_status { color: #139513; font-weight: 700; }
+    .response:not([data-code="200"]):not([data-code="201"]):not([data-code="202"]):not([data-code="204"]):not([data-code="206"]) .response-col_status { color: #cf0000; font-weight: 700; }
     .swagger-ui .opblock .tab-header .tab-item.active h4 span { surcor: default }
     .swagger-ui .opblock .tab-header .tab-item.active h4 span:after { content: none }
     .parameters-col_description em { font-size: 0.9em; color: #666 }
