@@ -1,6 +1,6 @@
 {
-  "name": "koa2-swagger-ui",
-  "version": "0.0.0-placeholder",
+  "name": "@myfiteco/koa-swagger",
+  "version": "1.0.0",
   "description": "Swagger UI middleware for koa",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -56,8 +56,11 @@
       "@babel/plugin-transform-modules-commonjs"
     ]
   },
-  "homepage": "https://github.com/scttcper/koa2-swagger-ui",
-  "repository": "scttcper/koa2-swagger-ui",
+  "homepage": "https://github.com/FITECO-SAS/Lib-KoaSwagger#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fiteco/Lib-KoaRouter.git"
+  },
   "keywords": [
     "swagger",
     "docs",
