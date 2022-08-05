@@ -1,26 +1,6 @@
-# koa2-swagger-ui [![NPM version][npm-image]][npm-url] [![CircleCI](https://circleci.com/gh/scttcper/koa2-swagger-ui.svg?style=svg)](https://circleci.com/gh/scttcper/koa2-swagger-ui)
+# Swagger Koa
 
-[npm-image]: https://img.shields.io/npm/v/koa2-swagger-ui.svg
-[npm-url]: https://npmjs.org/package/koa2-swagger-ui
-[travis-img]: https://api.travis-ci.org/scttcper/koa2-swagger-ui.svg?branch=master
-[travis-url]: https://travis-ci.org/scttcper/koa2-swagger-ui
-[coverage-img]: https://codecov.io/gh/scttcper/koa2-swagger-ui/branch/master/graph/badge.svg
-[coverage-url]: https://codecov.io/gh/scttcper/koa2-swagger-ui
-
-> Host swagger ui at a given directory from your koa v2 app
-
-Inspired by:
-
-- [swagger-injector](https://github.com/johnhof/swagger-injector) for serving on a specific route
-- [hapi-swaggered-ui](https://github.com/z0mt3c/hapi-swaggered-ui) for serving files from node_modules using a handlebars driven index.html
-
-## install
-
-```
-npm install koa2-swagger-ui --save
-```
-
-## config
+## Config
 
 for more swaggerOptions see [swagger-ui](https://github.com/swagger-api/swagger-ui#swaggerui)
 defaults:
@@ -46,7 +26,7 @@ hideTopbar: false, // hide swagger top bar
 favicon: '/favicon.png', // default favicon
 ```
 
-## example
+## Example
 
 ```javascript
 import Koa from 'koa';
@@ -66,7 +46,7 @@ app.use(
 app.listen(3000);
 ```
 
-## example with koa-router and yaml source
+## Example with koa-router and yaml source
 
 depends on yamljs to turn your Yaml into a JS object
 
